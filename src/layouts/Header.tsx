@@ -15,10 +15,10 @@ export default function Example() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 z-[9999] flex w-full max-w-container items-center justify-center bg-transparent backdrop-blur">
+    <header className="fixed top-0 z-[9999] flex w-full items-center justify-center bg-transparent backdrop-blur">
       <nav
         aria-label="Global"
-        className="mx-auto flex w-full items-center justify-between ~px-4/[6.875rem] ~py-[0.625rem]/6"
+        className="mx-auto flex w-full max-w-container items-center justify-between ~px-4/[6.875rem] ~py-[0.625rem]/6"
       >
         <div className="flex items-center gap-x-[2.2rem]">
           <a href="#" className="-m-1.5 p-1.5">
