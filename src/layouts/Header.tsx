@@ -7,32 +7,30 @@ import Bar3Icon from "@icons/Bars3Icon.svg";
 import XMarkIcon from "@icons/XMarkIcon.svg";
 
 const navigation = [
-  { name: "Product", href: "#" },
-  { name: "Features", href: "#" },
-  { name: "Marketplace", href: "#" },
-  { name: "Company", href: "#" },
+  { name: "홈페이지", href: "#" },
+  { name: "이벤트 소개", href: "#" },
 ];
 
 export default function Example() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-[9999] flex w-full max-w-container items-center justify-center bg-[#fffc] backdrop-blur">
+    <header className="fixed top-0 z-[9999] flex w-full max-w-container items-center justify-center bg-transparent backdrop-blur">
       <nav
         aria-label="Global"
-        className="mx-auto flex w-full items-center justify-between ~py-[0.625rem]/6 ~px-4/[6.875rem]"
+        className="mx-auto flex w-full items-center justify-between ~px-4/[6.875rem] ~py-[0.625rem]/6"
       >
-        <div className="flex items-center gap-x-12">
+        <div className="flex items-center gap-x-[2.2rem]">
           <a href="#" className="-m-1.5 p-1.5">
             <span className="sr-only">Your Company</span>
-            <img alt="" src={LogoHeader} className="h-8 w-auto" />
+            <img alt="" src={LogoHeader} className="h-auto ~w-[3rem]/[4rem]" />
           </a>
-          <div className="hidden lg:flex lg:gap-x-12">
+          <div className="hidden lg:flex lg:gap-x-[2.2rem]">
             {navigation.map((item) => (
               <a
                 key={item.name}
                 href={item.href}
-                className="text-sm/6 font-semibold text-gray-900"
+                className="text-[1rem] font-bold leading-[1.125rem] text-white"
               >
                 {item.name}
               </a>
@@ -49,10 +47,24 @@ export default function Example() {
             <img src={Bar3Icon} alt="Icon" className="size-6" />
           </button>
         </div>
-        <div className="hidden lg:flex">
-          <a href="#" className="text-sm/6 font-semibold text-gray-900">
-            Log in <span aria-hidden="true">&rarr;</span>
-          </a>
+        <div className="hidden h-[2.625rem] rounded-[30px] bg-gradient-to-r from-[#2250B5] to-[#289BE3] lg:flex">
+          <button className="flex h-full w-[8.125rem] items-center justify-center">
+            <a
+              href="#"
+              className="text-[1rem] font-bold leading-[1.125rem] text-white"
+            >
+              사전등록
+            </a>
+          </button>
+          <div className="h-full w-[0.3px] bg-white -skew-x-[18deg]"></div>
+          <button className="flex h-full w-[8.125rem] items-center justify-center">
+            <a
+              href="#"
+              className="text-[1rem] font-bold leading-[1.125rem] text-white"
+            >
+              연락처
+            </a>
+          </button>
         </div>
       </nav>
       <Dialog
@@ -61,7 +73,7 @@ export default function Example() {
         className="lg:hidden"
       >
         <div className="fixed inset-0 z-10" />
-        <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <DialogPanel className="fixed inset-y-0 right-0 z-[9999] w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
