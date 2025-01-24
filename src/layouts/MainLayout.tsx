@@ -7,7 +7,7 @@ type Props = {
 
 const MainLayout = ({ children }: Props) => {
   return (
-    <div className="relative flex min-h-screen flex-col items-center bg-gray-400">
+    <div className="relative flex min-h-screen flex-col items-center">
       <Header />
       <main className="flex size-full flex-col">{children}</main>
       <Footer />

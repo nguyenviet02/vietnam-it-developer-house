@@ -32,6 +32,13 @@
       format("truetype");
   }
 
+  @font-face {
+    font-family: Azonix;
+    font-style: normal;
+    font-weight: 400;
+    src: url("/src/fonts/azonix/Azonix.otf") format("opentype");
+  }
+
   html {
     font-family: NanumBarunGothic, sans-serif;
     color: #fff;

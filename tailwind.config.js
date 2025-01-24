@@ -20,7 +20,8 @@ export default {
 				"desktop": "90rem"
 			},
 			fontFamily: {
-				"NanumBarunGothic": ["NanumBarunGothic", "sans-serif"]
+				"NanumBarunGothic": ["NanumBarunGothic", "sans-serif"],
+				"Azonix": ["Azonix", "sans-serif"],
 			},
 			colors: {
 				"primary": "#000541",
