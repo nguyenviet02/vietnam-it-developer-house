@@ -6,7 +6,7 @@ import LocationIcon from "@icons/location.svg";
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
-    <footer className="mt-3 flex w-full flex-col items-center justify-center border-t border-[#808080] bg-[#FFFFFFB2] ~gap-8/12 ~py-8/[3.125rem]">
+    <footer className="flex w-full flex-col items-center justify-center border-t border-[#808080] bg-[#FFFFFFB2] pb-4 ~gap-8/12 ~pt-8/[4.375rem]">
       <div className="max-w-1440 grid w-full grid-cols-1 items-start ~gap-8/12 ~px-[1rem]/[6.875rem] md:grid-cols-3">
         <div className="flex flex-col items-start gap-8">
           <div className="flex items-center gap-6">
