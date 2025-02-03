@@ -47,20 +47,20 @@ export default function Example() {
             <img src={Bar3Icon} alt="Icon" className="filter-white size-6" />
           </button>
         </div>
-        <div className="hidden h-[2.625rem] rounded-[30px] bg-gradient-to-r from-[#2250B5] to-[#289BE3] lg:flex">
+        <div className="hidden h-[2.625rem] rounded-[30px] bg-white lg:flex">
           <button className="flex h-full w-[8.125rem] items-center justify-center">
             <a
               href="#"
-              className="text-[1rem] font-bold leading-[1.125rem] text-white"
+              className="text-[1rem] font-bold leading-[1.125rem] text-[#EA2323]"
             >
               사전등록
             </a>
           </button>
-          <div className="h-full w-[0.3px] -skew-x-[18deg] bg-white"></div>
+          <div className="h-full w-[0.3px] -skew-x-[18deg] bg-[#EA2323]"></div>
           <button className="flex h-full w-[8.125rem] items-center justify-center">
             <a
               href="#"
-              className="text-[1rem] font-bold leading-[1.125rem] text-white"
+              className="text-[1rem] font-bold leading-[1.125rem] text-[#EA2323]"
             >
               연락처
             </a>

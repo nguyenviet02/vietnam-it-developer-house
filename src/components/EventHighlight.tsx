@@ -1,12 +1,15 @@
 import EventHighlightBg from "@images/event-bg.png";
 import SpotlightImg from "@images/spotlight.svg";
 import PenImg from "@images/pen.png";
+import BackgroundTimeline1 from "@images/timeline1.png";
+import BackgroundTimeline2 from "@images/timeline2.png";
 
 const EventHighlight = () => {
   const listTimeline = [
     {
       id: 1,
       date: "2025/03/18",
+      background: BackgroundTimeline1,
       detail: [
         {
           time: "09:00 ~ 09:30",
@@ -55,6 +58,7 @@ const EventHighlight = () => {
     {
       id: 2,
       date: "2025/03/19",
+      background: BackgroundTimeline2,
       detail: [
         {
           time: "09:00 ~ 09:30",
@@ -102,21 +106,21 @@ const EventHighlight = () => {
     },
   ];
   return (
-    <div className="relative flex w-full justify-center">
+    <div className="relative flex w-full justify-center bg-[#0f0000]">
       <img
         src={EventHighlightBg}
-        className="absolute right-0 -z-[1] h-auto w-[50%] object-contain"
+        className="absolute right-0 z-[1] h-auto w-[50%] object-contain opacity-20"
         alt=""
       />
-      <section className="flex size-full max-w-container flex-col items-start ~gap-[2.25rem]/[5.25rem] ~pt-9/[12.75rem]">
+      <section className="z-10 flex size-full max-w-container flex-col items-start ~gap-[2.25rem]/[5.25rem] ~pt-9/[12.75rem]">
         <div className="flex flex-col gap-4 ~px-4/[6.875rem]">
-          <h2 className="~text-[0.875rem]/6 font-bold uppercase text-primary ~leading-[1.125rem]/7">
+          <h2 className="~text-[0.875rem]/6 font-bold uppercase text-white ~leading-[1.125rem]/7">
             Agenda Event * Highlight
           </h2>
           <h1 className="text-linear-gradient font-bold ~text-[1.5rem]/[4rem] ~leading-[1.75rem]/[4.75rem]">
             이벤트 일정 & 하이라이트
           </h1>
-          <h3 className="text-[1rem] font-light leading-5 text-primary">
+          <h3 className="text-[1rem] font-light leading-5 text-white">
             이벤트는 2일 동안 진행되며, 매일 각 분야에서 소프트웨어 개발
             성공사례를 공유합니다.
           </h3>
@@ -126,11 +130,15 @@ const EventHighlight = () => {
             return (
               <div
                 key={timeline.id}
-                className="relative flex max-w-[598px] flex-col rounded-xl bg-blue-400"
+                className="relative flex max-w-[598px] flex-col rounded-xl"
               >
-                <img src="" alt="" />
+                <img
+                  src={timeline.background}
+                  className="absolute left-0 top-0 -z-[1] size-full"
+                  alt=""
+                />
                 <div className="flex size-full flex-col ~gap-2/4 ~px-[1.125rem]/10 ~pt-6/[4rem] ~pb-6/[3rem]">
-                  <button className="w-fit rounded-[30px] bg-gradient-to-r from-[#2250B5] to-[#289BE3] font-bold text-white ~text-[0.75rem]/[1rem] ~px-[0.875rem]/[2.8rem] ~py-[0.375rem]/[0.625rem] ~leading-[0.875rem]/5">
+                  <button className="w-fit rounded-[30px] bg-[#EA2323] font-bold text-white ~text-[0.75rem]/[1rem] ~px-[0.875rem]/[2.8rem] ~py-[0.375rem]/[0.625rem] ~leading-[0.875rem]/5">
                     Timeline
                   </button>
                   <h2 className="font-Azonix ~text-[1.75rem]/[3rem] ~leading-[2rem]/[3.6rem]">
@@ -165,7 +173,7 @@ const EventHighlight = () => {
             );
           })}
         </div>
-        <div className="flex w-full flex-col items-center ~pr-4/[6.875rem]">
+        <div className="flex w-full flex-col items-center bg-gradient-to-b from-[#E21A0000] via-[#7D003250] to-[#240218] ~pr-4/[6.875rem]">
           <div className="flex w-full flex-col-reverse ~gap-9/[6.625rem] lg:flex-row">
             <img
               src={PenImg}
@@ -176,22 +184,22 @@ const EventHighlight = () => {
               <h1 className="text-linear-gradient pl-0 font-bold ~text-[1.5rem]/[4rem] ~leading-[1.75rem]/[4.75rem] lg:pl-[120px]">
                 이벤트 참여 시 받을 선물
               </h1>
-              <h3 className="font-bold text-primary ~text-[0.825rem]/[2rem] ~leading-[1.125rem]/[4rem]">
+              <h3 className="font-bold text-white ~text-[0.825rem]/[2rem] ~leading-[1.125rem]/[4rem]">
                 IT아웃소싱 서비스 이용 시 최대
               </h3>
-              <div className="w-fit rounded-2xl bg-[#289BE326] px-[1.5rem] py-[1rem]">
-                <span className="text-linear-gradient font-bold ~text-[1.5rem]/[3rem] ~leading-[1.75rem]/[4rem]">
+              <div className="w-fit rounded-2xl bg-gradient-to-b from-[#EA2323] to-[#841414] px-[1.5rem] py-[1rem]">
+                <span className="text-white font-bold ~text-[1.5rem]/[3rem] ~leading-[1.75rem]/[4rem]">
                   20% 할인 바우처
                 </span>
               </div>
-              <div className="font-bold text-primary ~text-[0.825rem]/[1.75rem] ~leading-[1.125rem]/[2rem]">
+              <div className="font-bold text-white ~text-[0.825rem]/[1.75rem] ~leading-[1.125rem]/[2rem]">
                 <span>유효 기간: </span>
                 <span className="text-linear-gradient">2025년 6월 30일</span>
               </div>
             </div>
           </div>
           <div className="relative flex w-full justify-center ~-translate-y-4/8 ~pl-4/[6.875rem]">
-            <button className="flex w-fit items-center justify-center bg-gradient-to-r from-[#2250B5] to-[#289BE3] px-8 py-3 ~text-[1rem]/[1.5rem] ~h-[2.25rem]/[3.5rem] ~leading-[1.75rem]/[2rem]">
+            <button className="flex w-fit items-center justify-center rounded-xl bg-[#EA2323] px-8 py-3 ~text-[1rem]/[1.5rem] ~h-[2.25rem]/[3.5rem] ~leading-[1.75rem]/[2rem]">
               체크인 시 받을 선물
             </button>
           </div>

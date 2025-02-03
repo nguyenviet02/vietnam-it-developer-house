@@ -28,7 +28,7 @@ const Hero = () => {
         </div>
         <button className="mt-[2.8rem] hidden w-full max-w-[22.25rem] items-center justify-between gap-4 rounded-[30px] bg-white p-3 xl:flex">
           <div className="size-8"></div>
-          <span className="text-linear-gradient text-xl font-bold leading-7">
+          <span className="text-[#EA2323] text-xl font-bold leading-7">
             사전 등록
           </span>
           <div className="flex items-center justify-center rounded-full bg-[#006FFF1A] p-1">

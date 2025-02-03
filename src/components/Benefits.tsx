@@ -12,6 +12,36 @@ import Benefit4 from "@icons/benefit-4.svg";
 import ITSLogo from "@images/ITSLogo.png";
 
 const Benefits = () => {
+  const benefits = [
+    {
+      id: 1,
+      icons: Benefit1,
+      title: "1:1 비즈 매칭",
+      description:
+        "참여자분 은 이벤트에서 잠재 파트너와의 만남 및 교류를 위해 일정이 조정됨",
+    },
+    {
+      id: 2,
+      icons: Benefit2,
+      title: "베트남 IT아웃소싱에 대한 토론 섹션",
+      description:
+        "한국 기업들을 위한 베트남 IT 아우소싱 협력에 대한 절차, 법률, 보안 및 계약에 관한 질문 해답",
+    },
+    {
+      id: 3,
+      icons: Benefit3,
+      title: "파트너 네트워크 구축",
+      description:
+        "참여자분 은 이벤트에서 잠재 파트너와의 만남 및 교류를 위해 일정이 조정됨",
+    },
+    {
+      id: 4,
+      icons: Benefit4,
+      title: "선물",
+      description:
+        "협력 시 디스카운트 쿠폰 및 프로그램 주최 측에서 선물 받을 기회",
+    },
+  ];
   return (
     <div className="relative size-full">
       <div className="absolute left-0 top-0 z-0 flex size-full h-fit flex-col justify-start xl:relative">
@@ -83,7 +113,7 @@ const Benefits = () => {
         </div>
       </div>
       <div className="relative size-full max-w-container ~px-4/[6.875rem] ~pt-10/[9rem] xl:absolute xl:left-1/2 xl:top-1/2 xl:h-fit xl:-translate-x-1/2 xl:-translate-y-1/2 xl:pt-0">
-        <div className="relative flex w-full max-w-container flex-col items-center justify-center overflow-hidden rounded-2xl bg-[#002ba4] px-[2.125rem] ~pt-[1.375rem]/[3.25rem] xl:h-fit">
+        <div className="relative flex w-full max-w-container flex-col items-center justify-center overflow-hidden rounded-2xl bg-[#330304] px-[2.125rem] ~pt-[1.375rem]/[3.25rem] xl:h-fit">
           <img
             src={ITSLogo}
             className="absolute left-0 top-0 h-full max-h-[50rem] w-auto min-w-[28.75rem] opacity-10"
@@ -93,45 +123,22 @@ const Benefits = () => {
             참여 혜택
           </h2>
           <div className="grid grid-cols-1 gap-6 pb-10 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-            <div className="flex h-fit min-h-[18.125rem] flex-col items-center rounded-xl bg-white px-7 pt-[38px] ~gap-[1rem]/[1.5rem]">
-              <img className="size-[60px]" src={Benefit1} alt="" />
-              <h3 className="text-linear-gradient text-[1.5rem] font-bold leading-[1.75rem]">
-                1:1 비즈 매칭
-              </h3>
-              <p className="text-[1rem] font-light leading-[1.25rem] text-primary">
-                참여자분 은 이벤트에서 잠재 파트너와의 만남 및 교류를 위해
-                일정이 조정됨
-              </p>
-            </div>
-            <div className="flex h-fit min-h-[18.125rem] flex-col items-center rounded-xl bg-white px-7 pt-[38px] ~gap-[1rem]/[1.5rem]">
-              <img className="size-[60px]" src={Benefit2} alt="" />
-              <h3 className="text-linear-gradient text-[1.5rem] font-bold leading-[1.75rem]">
-                베트남 IT아웃소싱에 대한 토론 섹션{" "}
-              </h3>
-              <p className="text-[1rem] font-light leading-[1.25rem] text-primary">
-                한국 기업들을 위한 베트남 IT 아우소싱 협력에 대한 절차, 법률,
-                보안 및 계약에 관한 질문 해답
-              </p>
-            </div>
-            <div className="flex h-fit min-h-[18.125rem] flex-col items-center rounded-xl bg-white px-7 pt-[38px] ~gap-[1rem]/[1.5rem]">
-              <img className="size-[60px]" src={Benefit3} alt="" />
-              <h3 className="text-linear-gradient text-[1.5rem] font-bold leading-[1.75rem]">
-                파트너 네트워크 구축
-              </h3>
-              <p className="text-[1rem] font-light leading-[1.25rem] text-primary">
-                참여자분 은 이벤트에서 잠재 파트너와의 만남 및 교류를 위해
-                일정이 조정됨
-              </p>
-            </div>
-            <div className="flex h-fit min-h-[18.125rem] flex-col items-center rounded-xl bg-white px-7 pt-[38px] ~gap-[1rem]/[1.5rem]">
-              <img className="size-[60px]" src={Benefit4} alt="" />
-              <h3 className="text-linear-gradient text-[1.5rem] font-bold leading-[1.75rem]">
-                선물
-              </h3>
-              <p className="text-[1rem] font-light leading-[1.25rem] text-primary">
-                협력 시 디스카운트 쿠폰 및 프로그램 주최 측에서 선물 받을 기회
-              </p>
-            </div>
+            {benefits.map((benefit) => {
+              return (
+                <div
+                  key={benefit.id}
+                  className="flex h-fit min-h-[18.125rem] flex-col items-center rounded-xl bg-white px-7 pt-[38px] ~gap-[1rem]/[1.5rem]"
+                >
+                  <img className="size-[60px]" src={benefit.icons} alt="" />
+                  <h3 className="text-[1.5rem] font-bold leading-[1.75rem] text-[#A50101]">
+                    {benefit.title}
+                  </h3>
+                  <p className="text-[1rem] font-light leading-[1.25rem] text-white">
+                    {benefit.description}
+                  </p>
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>
