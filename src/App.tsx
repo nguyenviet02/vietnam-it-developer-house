@@ -3,6 +3,7 @@ import Benefits from "@components/Benefits";
 import EventHighlight from "@components/EventHighlight";
 import Gifts from "@components/Gifts";
 import Hero from "@components/Hero";
+import PreRegistration from "@components/PreRegistration";
 import MainLayout from "@layouts/MainLayout";
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <Benefits />
       <EventHighlight />
       <Gifts />
+      <PreRegistration />
     </MainLayout>
   );
 }
