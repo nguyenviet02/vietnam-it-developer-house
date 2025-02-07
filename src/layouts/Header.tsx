@@ -9,6 +9,8 @@ import XMarkIcon from "@icons/XMarkIcon.svg";
 const navigation = [
   { name: "홈페이지", href: "#" },
   { name: "이벤트 소개", href: "#" },
+  { name: "연락처", href: "#" },
+  { name: "사전등록", href: "#" },
 ];
 
 export default function Example() {
@@ -18,19 +20,23 @@ export default function Example() {
     <header className="fixed top-0 z-[9999] flex w-full items-center justify-center bg-transparent backdrop-blur">
       <nav
         aria-label="Global"
-        className="mx-auto flex w-full max-w-container items-center justify-between ~px-4/[6.875rem] ~py-[0.625rem]/6"
+        className="mx-auto flex w-full max-w-container items-center justify-between py-4 ~px-4/[6.875rem] lg:py-0"
       >
-        <div className="flex items-center gap-x-[2.2rem]">
+        <div className="flex w-full items-center justify-between gap-x-[2.2rem]">
           <a href="#" className="-m-1.5 p-1.5">
             <span className="sr-only">Your Company</span>
-            <img alt="" src={LogoHeader} className="h-auto ~w-[3rem]/[4rem]" />
+            <img
+              alt=""
+              src={LogoHeader}
+              className="h-auto ~w-[6rem]/[10.875rem]"
+            />
           </a>
-          <div className="hidden lg:flex lg:gap-x-[2.2rem]">
+          <div className="hidden lg:flex lg:gap-x-6">
             {navigation.map((item) => (
               <a
                 key={item.name}
                 href={item.href}
-                className="text-[1rem] font-bold leading-[1.125rem] text-white"
+                className="hover:bg-red px-[27px] py-6 text-[1rem] font-bold leading-[1.125rem] text-white"
               >
                 {item.name}
               </a>
@@ -45,25 +51,6 @@ export default function Example() {
           >
             <span className="sr-only">Open main menu</span>
             <img src={Bar3Icon} alt="Icon" className="filter-white size-6" />
-          </button>
-        </div>
-        <div className="hidden h-[2.625rem] rounded-[30px] bg-white lg:flex">
-          <button className="flex h-full w-[8.125rem] items-center justify-center">
-            <a
-              href="#"
-              className="text-[1rem] font-bold leading-[1.125rem] text-[#EA2323]"
-            >
-              사전등록
-            </a>
-          </button>
-          <div className="h-full w-[0.3px] -skew-x-[18deg] bg-[#EA2323]"></div>
-          <button className="flex h-full w-[8.125rem] items-center justify-center">
-            <a
-              href="#"
-              className="text-[1rem] font-bold leading-[1.125rem] text-[#EA2323]"
-            >
-              연락처
-            </a>
           </button>
         </div>
       </nav>
@@ -104,20 +91,6 @@ export default function Example() {
                     {item.name}
                   </a>
                 ))}
-              </div>
-              <div className="py-6">
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
-                >
-                  사전등록
-                </a>
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
-                >
-                  연락처
-                </a>
               </div>
             </div>
           </div>

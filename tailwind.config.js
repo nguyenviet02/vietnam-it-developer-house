@@ -25,6 +25,7 @@ export default {
 			},
 			colors: {
 				"primary": "#000541",
+				"red": "#D72127"
 			},
 			spacing: {
 				"container": "90rem"
