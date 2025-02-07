@@ -28,15 +28,20 @@ const PreRegistration = () => {
               세션: 한국기업을 위한 IT아웃소싱 성공전략
             </span>
           </div>
-          <button className="flex w-full items-center justify-between rounded-[30px] bg-red ~mt-[2rem]/[2.8rem] ~max-w-[7.7rem]/[22.25rem] ~gap-2/4 ~p-1/3">
-            <div className="~size-1/8"></div>
-            <span className="font-extrabold text-white ~text-[0.75rem]/[1.5rem] ~leading-[0.825rem]/[1.75rem]">
-              사전 등록
-            </span>
-            <div className="flex items-center justify-center rounded-full bg-red p-1">
-              <img src={ArrowRight} alt="" className="size-full" />
-            </div>
-          </button>
+          <a
+            className="flex w-full justify-center"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSflkXdg1iEko5MIvDfhvcu_9yriBV1ZIpP-E6GE_tFP1aokVQ/viewform"
+          >
+            <button className="flex w-full items-center justify-between rounded-[30px] bg-red ~mt-[2rem]/[2.8rem] ~max-w-[7.7rem]/[22.25rem] ~gap-2/4 ~p-1/3">
+              <div className="~size-1/8"></div>
+              <span className="font-extrabold text-white ~text-[0.75rem]/[1.5rem] ~leading-[0.825rem]/[1.75rem]">
+                사전 등록
+              </span>
+              <div className="flex items-center justify-center rounded-full bg-red p-1">
+                <img src={ArrowRight} alt="" className="size-full" />
+              </div>
+            </button>
+          </a>
           <div className="absolute flex flex-col items-center ~right-[0.75rem]/[3.25rem] ~bottom-[0.75rem]/[3.25rem] ~gap-[0.25rem]/[0.75rem]">
             <div className="relative rounded-xl bg-white px-3">
               {/* arrow */}

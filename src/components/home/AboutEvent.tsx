@@ -1,7 +1,18 @@
 import ITSLogo from "@images/home-about-event-bg.png";
 import AboutEventImage from "@images/home-about-event.png";
+import { useRef, useEffect } from "react";
+import { useLocation } from "react-router";
 
 const AboutEvent = () => {
+  const location = useLocation();
+  const aboutEventRef = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    if (location.hash === "#about-event") {
+      if (aboutEventRef.current) {
+        aboutEventRef.current.scrollIntoView();
+      }
+    }
+  }, [location.hash]);
   const navigation = [
     {
       id: 1,
@@ -15,18 +26,24 @@ const AboutEvent = () => {
     },
   ];
   return (
-    <div className="relative mx-auto w-full max-w-container overflow-hidden py-[3.625rem]">
+    <div
+      id="#about-event"
+      ref={aboutEventRef}
+      className="relative mx-auto w-full max-w-container overflow-hidden py-[3.625rem]"
+    >
       <img
         src={ITSLogo}
         className="absolute right-0 -z-[1] -translate-y-[30%] opacity-20"
         alt=""
       />
-      <h3 className="mb-2 text-[1rem] font-bold leading-[1.25rem] text-primary">
-        About this event
-      </h3>
-      <h2 className="text-linear-gradient font-extrabold ~text-[1.125rem]/[4rem] ~leading-[1.5rem]/[4.75rem]">
-        이 이벤트에 대하여
-      </h2>
+      <div className="~px-4/[5rem]">
+        <h3 className="mb-2 text-[1rem] font-bold leading-[1.25rem] text-primary">
+          About this event
+        </h3>
+        <h2 className="text-linear-gradient font-extrabold ~text-[1.125rem]/[4rem] ~leading-[1.5rem]/[4.75rem]">
+          이 이벤트에 대하여
+        </h2>
+      </div>
       <div className="mt-[3.875rem] flex w-full items-center gap-[4.7rem]">
         <img src={AboutEventImage} className="h-auto w-full" alt="" />
         <div className="flex flex-col gap-[3rem] pr-[5rem]">

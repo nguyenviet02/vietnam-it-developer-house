@@ -7,10 +7,13 @@ import Bar3Icon from "@icons/Bars3Icon.svg";
 import XMarkIcon from "@icons/XMarkIcon.svg";
 
 const navigation = [
-  { name: "홈페이지", href: "#" },
-  { name: "이벤트 소개", href: "#" },
-  { name: "연락처", href: "#" },
-  { name: "사전등록", href: "#" },
+  { name: "홈페이지", href: "/" },
+  { name: "이벤트 소개", href: "#about-event" },
+  { name: "연락처", href: "#contact" },
+  {
+    name: "사전등록",
+    href: "https://event-us.kr/itskorea/event/97652?utm_source=facebook&utm_campaign=wsbbe0ecey",
+  },
 ];
 
 export default function Example() {
@@ -36,7 +39,7 @@ export default function Example() {
               <a
                 key={item.name}
                 href={item.href}
-                className="hover:bg-red px-[27px] py-6 text-[1rem] font-bold leading-[1.125rem] text-white"
+                className="px-[27px] py-6 text-[1rem] font-bold leading-[1.125rem] text-white hover:bg-red"
               >
                 {item.name}
               </a>
