@@ -23,7 +23,7 @@ export default function Example() {
         className="mx-auto flex w-full max-w-container items-center justify-between py-4 ~px-4/[5rem] lg:py-0"
       >
         <div className="flex w-full items-center justify-between gap-x-[2.2rem]">
-          <a href="#" className="-m-1.5 p-1.5">
+          <a href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Your Company</span>
             <img
               alt=""

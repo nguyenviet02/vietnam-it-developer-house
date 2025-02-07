@@ -1,5 +1,19 @@
+import PreRegistration from "@components/common/PreRegistration";
+import Reference from "@components/common/Reference";
+import Benefits from "@components/web3-odyssey/Benefits";
+import EventHighlight from "@components/web3-odyssey/EventHighlight";
+import Hero from "@components/web3-odyssey/Hero";
+
 const Web3Odyssey = () => {
-  return <div>Web3Odyssey</div>;
+  return (
+    <>
+      <Hero />
+      <Benefits />
+      <EventHighlight />
+      <PreRegistration />
+      <Reference />
+    </>
+  );
 };
 
 export default Web3Odyssey;
