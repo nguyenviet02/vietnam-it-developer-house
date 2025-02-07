@@ -9,7 +9,11 @@ const AboutEvent = () => {
   useEffect(() => {
     if (location.hash === "#about-event") {
       if (aboutEventRef.current) {
-        aboutEventRef.current.scrollIntoView();
+        aboutEventRef.current.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+          inline: "nearest",
+        });
       }
     }
   }, [location.hash]);
@@ -40,13 +44,13 @@ const AboutEvent = () => {
         <h3 className="mb-2 text-[1rem] font-bold leading-[1.25rem] text-primary">
           About this event
         </h3>
-        <h2 className="text-linear-gradient font-extrabold ~text-[1.125rem]/[4rem] ~leading-[1.5rem]/[4.75rem]">
+        <h2 className="text-linear-gradient font-extrabold ~text-[2rem]/[4rem] ~leading-[2.5rem]/[4.75rem]">
           이 이벤트에 대하여
         </h2>
       </div>
-      <div className="mt-[3.875rem] flex w-full items-center gap-[4.7rem]">
+      <div className="mt-[3.875rem] flex w-full flex-col items-center gap-[4.7rem] lg:flex-row">
         <img src={AboutEventImage} className="h-auto w-full" alt="" />
-        <div className="flex flex-col gap-[3rem] pr-[5rem]">
+        <div className="flex flex-col gap-[3rem] px-4 lg:pr-[5rem]">
           <div className="flex flex-col ~gap-3/6">
             <h2 className="flex flex-col text-[3rem] font-extrabold leading-[3.375rem]">
               <span className="text-linear-gradient">Vietnam IT</span>

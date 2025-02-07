@@ -12,7 +12,11 @@ const Footer = () => {
   useEffect(() => {
     if (location.hash === "#contact") {
       if (footerRef.current) {
-        footerRef.current.scrollIntoView();
+        footerRef.current.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+          inline: "nearest",
+        });
       }
     }
   }, [location.hash]);
