@@ -3,7 +3,7 @@ import ITSLogo from "@images/ITS-logo.svg";
 
 const Hero = () => {
   return (
-    <div className="relative flex size-full flex-col justify-center ~min-h-[14.0625rem]/[49.8125rem]">
+    <div className="relative flex size-full flex-col justify-center ~min-h-[14.0625rem]/[49.8125rem] items-center">
       <img src={HeroBg} className="absolute -z-[1] size-full" alt="" />
       <div className="flex size-full max-w-container flex-col items-center justify-center ~px-4/[5rem]">
         <div className="flex size-full flex-col items-center justify-center text-white ~gap-[0.5625rem]/[1.5rem] ~pt-[4.875rem]/[11.875rem]">
