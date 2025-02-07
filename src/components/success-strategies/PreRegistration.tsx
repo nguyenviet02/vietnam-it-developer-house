@@ -1,11 +1,11 @@
-import Background from "@images/aboutus-bg.png";
+import Background from "@images/reference-bg.png";
 import ArrowRight from "@icons/ep_right.svg";
 import QR from "@images/QR.svg";
 
 const PreRegistration = () => {
   return (
-    <div className="relative w-full max-w-container ~px-4/[6.875rem] ~py-[2.25rem]/[5rem] flex justify-center mx-auto">
-      <div className="relative size-full flex justify-center h-fit overflow-hidden">
+    <div className="relative mx-auto flex w-full max-w-container justify-center ~px-4/[5rem] ~py-[2.25rem]/[5rem]">
+      <div className="relative flex size-full h-fit justify-center overflow-hidden">
         <img
           src={Background}
           className="absolute left-0 top-0 -z-[1] size-full rounded-xl object-cover"
@@ -24,13 +24,16 @@ const PreRegistration = () => {
                 Developer House
               </h2>
             </div>
+            <span className="text-[1.5rem] font-extrabold leading-[1.75rem]">
+              세션: 한국기업을 위한 IT아웃소싱 성공전략
+            </span>
           </div>
-          <button className="~mt-[2rem]/[2.8rem] flex w-full items-center justify-between ~gap-2/4 rounded-[30px] bg-white ~p-1/3 ~max-w-[7.7rem]/[22.25rem]">
+          <button className="flex w-full items-center justify-between rounded-[30px] bg-red ~mt-[2rem]/[2.8rem] ~max-w-[7.7rem]/[22.25rem] ~gap-2/4 ~p-1/3">
             <div className="~size-1/8"></div>
-            <span className="text-linear-gradient font-bold ~text-[0.75rem]/[1.5rem] ~leading-[0.825rem]/[1.75rem]">
+            <span className="font-extrabold text-white ~text-[0.75rem]/[1.5rem] ~leading-[0.825rem]/[1.75rem]">
               사전 등록
             </span>
-            <div className="flex items-center justify-center rounded-full bg-[#006FFF1A] p-1">
+            <div className="flex items-center justify-center rounded-full bg-red p-1">
               <img src={ArrowRight} alt="" className="size-full" />
             </div>
           </button>

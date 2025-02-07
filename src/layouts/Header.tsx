@@ -20,7 +20,7 @@ export default function Example() {
     <header className="fixed top-0 z-[9999] flex w-full items-center justify-center bg-transparent backdrop-blur">
       <nav
         aria-label="Global"
-        className="mx-auto flex w-full max-w-container items-center justify-between py-4 ~px-4/[6.875rem] lg:py-0"
+        className="mx-auto flex w-full max-w-container items-center justify-between py-4 ~px-4/[5rem] lg:py-0"
       >
         <div className="flex w-full items-center justify-between gap-x-[2.2rem]">
           <a href="#" className="-m-1.5 p-1.5">

@@ -11,7 +11,7 @@ const Gifts = () => {
         className="absolute right-0 -z-[1] h-auto w-full"
         alt=""
       />
-      <div className="w-full max-w-container ~px-4/[6.875rem] ~pb-[1rem]/[3rem]">
+      <div className="w-full max-w-container ~px-4/[5rem] ~pb-[1rem]/[3rem]">
         <h1 className="text-center font-bold uppercase text-white ~text-[1.5rem]/[4rem] ~my-[1.5rem]/[5.625rem] ~leading-[1.75rem]/[4.75rem]">
           이벤트 참여 시 받을 선물
         </h1>
