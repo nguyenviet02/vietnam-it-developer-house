@@ -71,7 +71,7 @@ const AboutEvent = () => {
                 <a
                   href={item.href}
                   key={item.id}
-                  className="group flex items-center justify-between text-[1rem] font-extrabold leading-[1.25rem] text-primary hover:text-[#DC0611]"
+                  className="group flex items-center justify-between border-b border-[#DDDDDD] pb-4 text-[1rem] font-extrabold leading-[1.25rem] text-primary hover:border-red hover:text-[#DC0611]"
                 >
                   <span>{item.text}</span>
                   <div className="flex items-center justify-center rounded-full bg-[#DDDDDD] p-3 group-hover:bg-red">

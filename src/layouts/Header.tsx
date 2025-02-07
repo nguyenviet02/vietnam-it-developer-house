@@ -13,6 +13,7 @@ const navigation = [
   {
     name: "사전등록",
     href: "https://event-us.kr/itskorea/event/97652?utm_source=facebook&utm_campaign=wsbbe0ecey",
+    isHighlight: true,
   },
 ];
 
@@ -39,7 +40,7 @@ export default function Example() {
               <a
                 key={item.name}
                 href={item.href}
-                className="px-[27px] py-6 text-[1rem] font-bold leading-[1.125rem] text-white hover:bg-red"
+                className={`px-[27px] py-6 text-[1rem] font-bold leading-[1.125rem] text-white ${item.isHighlight ? "bg-red" : ""}`}
               >
                 {item.name}
               </a>
