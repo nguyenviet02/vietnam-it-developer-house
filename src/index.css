@@ -4,32 +4,40 @@
 
 @layer base {
   @font-face {
-    font-family: NanumBarunGothic;
+    font-family: TheJamsil;
     font-style: normal;
     font-weight: 200;
-    src: url("/src/fonts/nanum-barun-gothic/NanumBarunGothicUltraLight.ttf")
-      format("truetype");
+    src: url("/src/fonts/the-jamsil/TheJamsilThin.otf") format("opentype");
   }
   @font-face {
-    font-family: NanumBarunGothic;
+    font-family: TheJamsil;
     font-style: normal;
     font-weight: 300;
-    src: url("/src/fonts/nanum-barun-gothic/NanumBarunGothicLight.ttf")
-      format("truetype");
+    src: url("/src/fonts/the-jamsil/TheJamsilLight.otf") format("opentype");
   }
   @font-face {
-    font-family: NanumBarunGothic;
+    font-family: TheJamsil;
     font-style: normal;
     font-weight: 400;
-    src: url("/src/fonts/nanum-barun-gothic/NanumBarunGothic.ttf")
-      format("truetype");
+    src: url("/src/fonts/the-jamsil/TheJamsilRegular.otf") format("opentype");
   }
   @font-face {
-    font-family: NanumBarunGothic;
+    font-family: TheJamsil;
     font-style: normal;
-    font-weight: 600;
-    src: url("/src/fonts/nanum-barun-gothic/NanumBarunGothicBold.ttf")
-      format("truetype");
+    font-weight: 500;
+    src: url("/src/fonts/the-jamsil/TheJamsilMedium.otf") format("opentype");
+  }
+  @font-face {
+    font-family: TheJamsil;
+    font-style: normal;
+    font-weight: 700;
+    src: url("/src/fonts/the-jamsil/TheJamsilBold.otf") format("opentype");
+  }
+  @font-face {
+    font-family: TheJamsil;
+    font-style: normal;
+    font-weight: 800;
+    src: url("/src/fonts/the-jamsil/TheJamsilExtraBold.otf") format("opentype");
   }
 
   @font-face {
@@ -40,15 +48,15 @@
   }
 
   html {
-    font-family: NanumBarunGothic, sans-serif;
+    font-family: TheJamsil, sans-serif;
     color: #fff;
-		background-color: #0f0000;
+    background-color: #0f0000;
   }
 }
 
 /* Custom CSS */
 .text-linear-gradient {
-  background-image: linear-gradient(90deg, #FF9799 0%, #DC0611 40%);
+  background-image: linear-gradient(90deg, #ff9799 0%, #dc0611 40%);
   background-clip: text;
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
