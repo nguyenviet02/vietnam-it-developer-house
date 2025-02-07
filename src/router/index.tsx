@@ -1,4 +1,4 @@
-import App from "@/App";
+import Home from "@/pages/Home";
 import SuccessStrategies from "@/pages/SuccessStrategies";
 import Web3Odyssey from "@/pages/Web3Odyssey";
 import MainLayout from "@layouts/MainLayout";
@@ -9,7 +9,7 @@ const MainRouter = () => {
     <BrowserRouter>
       <Routes>
         <Route element={<MainLayout />}>
-          <Route index path="/" element={<App />} />
+          <Route index path="/" element={<Home />} />
           <Route path="success-strategies" element={<SuccessStrategies />} />
           <Route path="web3-odyssey" element={<Web3Odyssey />} />
         </Route>
