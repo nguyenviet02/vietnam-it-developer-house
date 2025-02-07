@@ -56,7 +56,7 @@
 
 /* Custom CSS */
 .text-linear-gradient {
-  background-image: linear-gradient(90deg, #ff9799 0%, #dc0611 40%);
+  background-image: linear-gradient(90deg, #b52224 0%, #600018 40%);
   background-clip: text;
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;

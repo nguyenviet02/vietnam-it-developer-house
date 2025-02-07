@@ -24,7 +24,7 @@ export default {
 				"Azonix": ["Azonix", "sans-serif"],
 			},
 			colors: {
-				"primary": "#000541",
+				"primary": "#202335",
 				"red": "#D72127"
 			},
 			spacing: {
