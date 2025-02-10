@@ -72,12 +72,12 @@ const EventHighlight = () => {
           title: "아이스티 소프트웨어 회사 소개",
         },
         {
-          time: "10:00 ~ 10:45",
+          time: "10:00 ~ 10:15",
           title: "성공 사례: 베트남 아웃소싱 회사와 협력 사례 발표",
           isHighlight: true,
         },
         {
-          time: "10:45 ~ 11:00",
+          time: "10:15 ~ 11:00",
           title: "Q&A - 기업 대표자 답변",
         },
         {
