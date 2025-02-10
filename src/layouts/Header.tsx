@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Dialog, DialogPanel } from "@headlessui/react";
 import LogoHeader from "@images/LogoHeader.svg";
 import Bar3Icon from "@icons/Bars3Icon.svg";
@@ -17,11 +17,30 @@ const navigation = [
   },
 ];
 
-export default function Example() {
+export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [isSticky, setIsSticky] = useState(false);
+  console.log("☠️ ~ Example ~ isSticky:", isSticky);
+
+  const handleScroll = () => {
+    if (window.scrollY > 60) {
+      setIsSticky(true);
+    } else {
+      setIsSticky(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
-    <header className="fixed top-0 z-[9999] flex w-full items-center justify-center bg-transparent backdrop-blur">
+    <header
+      className={`fixed top-0 z-[9999] flex w-full items-center justify-center bg-transparent backdrop-blur ${isSticky ? "bg-[#20233566] shadow-md" : ""}`}
+    >
       <nav
         aria-label="Global"
         className="mx-auto flex w-full max-w-container items-center justify-between py-4 ~px-4/[5rem] lg:py-0"
