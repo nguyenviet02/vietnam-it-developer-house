@@ -39,7 +39,7 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 z-[9999] flex w-full items-center justify-center bg-transparent backdrop-blur ${isSticky ? "bg-[#20233566] shadow-md" : ""}`}
+      className={`fixed top-0 z-[9999] flex w-full items-center justify-center backdrop-blur ${isSticky ? "bg-[#20233566] shadow-md" : "bg-transparent"}`}
     >
       <nav
         aria-label="Global"
