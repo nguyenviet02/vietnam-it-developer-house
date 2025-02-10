@@ -20,23 +20,27 @@ const EventHighlight = () => {
         },
         {
           time: "09:45 ~ 10:00",
-          title: "IT아웃소싱 소개",
+          title: "베트남 IT 아웃소싱 현황",
         },
         {
           time: "10:00 ~ 10:15",
-          title: "후원자 회사 소개",
+          title: "Q&A",
         },
         {
           time: "10:15 ~ 10:30",
-          title: "성공 사례: 한국 기업이 베트남 기업과 협력 과정에 대해 발표",
-          isHighlight: true,
+          title: "아이스티 소프트웨어 회사 소개",
         },
         {
-          time: "10:30 ~ 11:15",
-          title: "Q&A - 기업 대표자 답변",
+          time: "10:30 ~ 10:45",
+          title: "해외 아웃소싱을 할때 준비해야 할 점",
+					isSpotlight: true,
         },
         {
-          time: "11:15 ~ 12:00",
+          time: "10:45 ~ 11:00",
+          title: "Q&A",
+        },
+        {
+          time: "11:00 ~ 11:45",
           title: "미니게임",
         },
         {
@@ -45,11 +49,11 @@ const EventHighlight = () => {
         },
         {
           time: "13:00 ~ 13:10",
-          title: "기존 앱에 블록체인 기술 통합",
+          title: "기존 앱에서 블록체인 기술 통합",
         },
         {
           time: "13:10 ~ 15:00",
-          title: " 1:1비즈매칭",
+          title: "1:1 Biz Matching",
           isSpotlight: true,
         },
       ],
@@ -65,20 +69,24 @@ const EventHighlight = () => {
         },
         {
           time: "09:30 ~ 09:45",
-          title: "IT아웃소싱 소개",
+          title: "베트남 IT 아웃소싱 현황",
         },
         {
           time: "09:45 ~ 10:00",
-          title: "아이스티 소프트웨어 회사 소개",
+          title: "Q&A",
         },
         {
           time: "10:00 ~ 10:15",
-          title: "성공 사례: 베트남 아웃소싱 회사와 협력 사례 발표",
-          isHighlight: true,
+          title: "아이스티 소프트웨어 회사 소개",
         },
         {
-          time: "10:15 ~ 11:00",
-          title: "Q&A - 기업 대표자 답변",
+          time: "10:15 ~ 10:30",
+          title: "성공 사례: 베트남 아웃소싱 회사와 협력 사례 발표",
+					isSpotlight: true,
+        },
+        {
+          time: "10:30 ~ 11:00",
+          title: "Q&A",
         },
         {
           time: "11:00 ~ 11:45",
@@ -90,11 +98,11 @@ const EventHighlight = () => {
         },
         {
           time: "13:00 ~ 13:10",
-          title: "Web2에서 Web3로의 전환 상담",
+          title: "Web2에서 web3로의 전환 상담",
         },
         {
           time: "13:10 ~ 15:00",
-          title: "1:1비즈매칭",
+          title: "1:1 Biz Matching",
           isSpotlight: true,
         },
       ],
