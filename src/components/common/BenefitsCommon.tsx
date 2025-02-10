@@ -16,7 +16,7 @@ type Props = {
 
 const BenefitsCommon = ({ benefits }: Props) => {
   return (
-    <div className="relative size-full pb-[4rem] flex justify-center">
+    <div className="relative flex size-full justify-center pb-[4rem]">
       <div className="absolute left-0 top-0 z-0 flex size-full h-fit flex-col justify-start">
         {/* Line image 1 */}
         <div className="flex size-full">
@@ -79,10 +79,10 @@ const BenefitsCommon = ({ benefits }: Props) => {
                   className="flex h-full min-h-[16.125rem] flex-col items-center rounded-xl bg-white px-7 py-[38px] ~gap-[1rem]/[1.5rem]"
                 >
                   <img className="size-[60px]" src={benefit.icons} alt="" />
-                  <h3 className="text-[1.5rem] font-bold leading-[1.75rem] text-primary">
+                  <h3 className="text-center text-[1.5rem] font-bold leading-[1.75rem] text-primary">
                     {benefit.title}
                   </h3>
-                  <p className="text-[1rem] font-light leading-[1.25rem] text-primary">
+                  <p className="text-center text-[1rem] font-light leading-[1.25rem] text-primary">
                     {benefit.description}
                   </p>
                 </div>
