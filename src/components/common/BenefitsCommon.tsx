@@ -1,5 +1,5 @@
 import AboutUsImg1 from "@images/aboutus-1.png";
-import AboutUsImg2 from "@images/aboutus-2.png";
+import AboutUsImg2 from "@images/aboutus-2.jpg";
 import AboutUsImg3 from "@images/aboutus-3.png";
 import AboutUsImg4 from "@images/aboutus-4.png";
 
