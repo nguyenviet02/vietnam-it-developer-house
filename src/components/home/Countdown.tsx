@@ -4,6 +4,8 @@ const Countdown = () => {
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
     hours: 0,
+    minutes: 0,
+    seconds: 0,
   });
 
   // Add padding function for numbers less than 10
@@ -25,13 +27,15 @@ const Countdown = () => {
 
       if (difference > 0) {
         const days = Math.floor(difference / (1000 * 60 * 60 * 24));
-        const hours = Math.floor(
-          (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),
-        );
+        const hours = Math.floor((difference / (1000 * 60 * 60)) % 24);
+        const minutes = Math.floor((difference / 1000 / 60) % 60);
+        const seconds = Math.floor((difference / 1000) % 60);
 
         setTimeLeft({
           days,
           hours,
+          minutes,
+          seconds,
         });
       }
     };
@@ -40,14 +44,15 @@ const Countdown = () => {
     calculateTimeLeft();
 
     // Update every hour
-    const timer = setInterval(calculateTimeLeft, 1000 * 60);
+    const timer = setInterval(calculateTimeLeft, 1000);
 
     return () => clearInterval(timer);
   }, []);
 
   return (
     <span className="w-fit shrink-0 ~text-[0.75rem]/[2.25rem] ~leading-[1rem]/[3.375rem]">
-      {padNumber(timeLeft.days)} 일 {padNumber(timeLeft.hours)} 시간
+      {padNumber(timeLeft.days)}일 : {padNumber(timeLeft.hours)}시간 :{" "}
+      {padNumber(timeLeft.minutes)}분 : {padNumber(timeLeft.seconds)}조
     </span>
   );
 };
