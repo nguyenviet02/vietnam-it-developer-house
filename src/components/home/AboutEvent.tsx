@@ -49,7 +49,7 @@ const AboutEvent = () => {
         </h2>
       </div>
       <div className="mt-[3.875rem] flex w-full flex-col items-center gap-[4.7rem] lg:flex-row">
-        <img src={AboutEventImage} className="h-auto w-full" alt="" />
+        <img src={AboutEventImage} className="h-auto w-full lg:w-1/2" alt="" />
         <div className="flex flex-col gap-[3rem] px-4 lg:pr-[5rem]">
           <div className="flex flex-col ~gap-3/6">
             <h2 className="flex flex-col text-[3rem] font-extrabold leading-[3.375rem]">
