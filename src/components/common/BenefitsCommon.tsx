@@ -97,10 +97,8 @@ const BenefitsCommon = ({ benefits }: Props) => {
               20% 할인 바우처
             </span>
             <span className="font-medium ~text-[0.875rem]/[1.25rem] ~leading-[1rem]/[1.5rem]">
-              유효 기간:
-              <span className="text-text-linear-gradient/">
-                2025년 6월 30일
-              </span>
+              유효 기간:{" "}
+              <span className="text-linear-gradient-2">2025년 6월 30일</span>
             </span>
           </div>
         </div>

@@ -65,27 +65,23 @@ const EventHighlight = () => {
         },
         {
           time: "09:30 ~ 09:45",
-          title: "개막",
-        },
-        {
-          time: "09:45 ~ 10:00",
           title: "IT아웃소싱 소개",
         },
         {
-          time: "10:00 ~ 10:15",
-          title: "후원자 회사 소개",
+          time: "09:45 ~ 10:00",
+          title: "아이스티 소프트웨어 회사 소개",
         },
         {
-          time: "10:15 ~ 10:30",
-          title: "성공 사례: 한국 기업이 베트남 기업과 협력 과정에 대해 발표",
+          time: "10:00 ~ 10:45",
+          title: "성공 사례: 베트남 아웃소싱 회사와 협력 사례 발표",
           isHighlight: true,
         },
         {
-          time: "10:30 ~ 11:15",
+          time: "10:45 ~ 11:00",
           title: "Q&A - 기업 대표자 답변",
         },
         {
-          time: "11:15 ~ 12:00",
+          time: "11:00 ~ 11:45",
           title: "미니게임",
         },
         {
@@ -94,11 +90,11 @@ const EventHighlight = () => {
         },
         {
           time: "13:00 ~ 13:10",
-          title: "기존 앱에 블록체인 기술 통합",
+          title: "Web2에서 Web3로의 전환 상담",
         },
         {
           time: "13:10 ~ 15:00",
-          title: " 1:1비즈매칭",
+          title: "1:1비즈매칭",
           isSpotlight: true,
         },
       ],
@@ -120,8 +116,8 @@ const EventHighlight = () => {
             이벤트 일정 & 하이라이트
           </h1>
           <h3 className="text-[1rem] leading-5 text-primary">
-            이벤트는 2일 동안 진행되며, 매일 각 분야에서 소프트웨어 개발
-            성공사례를 공유합니다.
+            아이스티 소프트웨어 개발한 프로덕트 체험, Web3 창업자 및 빌더들과
+            네트워크 등 무궁무진한 활동이 기다리리고 있습니다.
           </h3>
         </div>
         <ListTimeline timelines={listTimeline} />

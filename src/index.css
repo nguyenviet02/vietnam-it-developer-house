@@ -64,6 +64,15 @@
   -webkit-text-fill-color: transparent;
 }
 
+.text-linear-gradient-2 {
+  background-image: linear-gradient(90deg, #FF9799 0%, #DC0611 40%);
+  background-clip: text;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .filter-white {
   filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(182deg)
     brightness(105%) contrast(101%);

@@ -76,8 +76,8 @@ const EventHighlight = () => {
             이벤트 일정 & 하이라이트
           </h1>
           <h3 className="text-[1rem] leading-5 text-primary">
-            이벤트는 2일 동안 진행되며, 매일 각 분야에서 소프트웨어 개발
-            성공사례를 공유합니다.
+            아이스티 소프트웨어 개발한 프로덕트 체험, Web3 창업자 및 빌더들과
+            네트워크 등 무궁무진한 활동이 기다리리고 있습니다.
           </h3>
         </div>
         <ListTimeline timelines={listTimeline} />
