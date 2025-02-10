@@ -29,7 +29,7 @@ const Footer = () => {
         <div className="flex flex-col items-start gap-8">
           <div className="flex items-center gap-6">
             <a
-              href="https://www.linkedin.com/company/vietnam-it-developer-house"
+              href="https://www.linkedin.com/events/vietnamitdeveloperhouse7287023168764989440/"
               className="group"
             >
               <svg
