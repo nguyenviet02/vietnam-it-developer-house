@@ -25,7 +25,7 @@ const PreRegistration = () => {
               </h2>
             </div>
             <span className="text-[1.5rem] font-extrabold leading-[1.75rem]">
-              세션: 웹3 오딧세이: 빌더, 트렌드, 그리고 미래
+              Track 2 : 웹3 오딧세이 - 빌더, 트렌드, 그리고 미래
             </span>
           </div>
           <a
