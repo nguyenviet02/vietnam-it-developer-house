@@ -52,7 +52,7 @@ const Countdown = () => {
   return (
     <span className="w-fit shrink-0 ~text-[0.75rem]/[2.25rem] ~leading-[1rem]/[3.375rem]">
       {padNumber(timeLeft.days)}일 : {padNumber(timeLeft.hours)}시간 :{" "}
-      {padNumber(timeLeft.minutes)}분 : {padNumber(timeLeft.seconds)}조
+      {padNumber(timeLeft.minutes)}분 : {padNumber(timeLeft.seconds)}초
     </span>
   );
 };

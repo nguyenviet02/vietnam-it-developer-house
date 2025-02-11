@@ -40,14 +40,9 @@ const AboutEvent = () => {
         className="absolute right-0 -z-[1] -translate-y-[30%] opacity-20"
         alt=""
       />
-      <div className="~px-4/[5rem]">
-        <h3 className="mb-2 text-[1rem] font-bold leading-[1.25rem] text-primary">
-          About this event
-        </h3>
-        <h2 className="text-linear-gradient font-extrabold ~text-[2rem]/[4rem] ~leading-[2.5rem]/[4.75rem]">
-          이 이벤트에 대하여
-        </h2>
-      </div>
+      <h3 className="font-bold text-linear-gradient ~text-[2rem]/[4rem] ~leading-[2.5rem]/[4.75rem]">
+        About this event
+      </h3>
       <div className="mt-[3.875rem] flex w-full flex-col items-center gap-[4.7rem] lg:flex-row">
         <img src={AboutEventImage} className="h-auto w-full lg:w-1/2" alt="" />
         <div className="flex flex-col gap-[3rem] px-4 lg:pr-[5rem]">
@@ -57,12 +52,12 @@ const AboutEvent = () => {
               <span className="text-primary">DEVELOPER란?</span>
             </h2>
             <p className="text-[1rem] font-light leading-[1.25rem] text-primary">
-              이 행사는 베트남과 한국의 IT 기업 및 스타트업 간 기술 협력을
-              촉진하고, 해외 IT 인재를 발굴할 수 있는 기회를 제공하는 것을
-              목표로 합니다. 또한, 한국 기업들의 베트남 IT 아웃소싱 협력에 대한
-              궁금증을 해소하는 자리일 뿐만 아니라, 전통적인 소프트웨어 개발부터
-              블록체인, AI, 그리고 탈중앙화 생태계에 이르기까지 전통 기술 및
-              블록체인 기술 트렌드에 대한 논의의 장을 마련합니다
+              이 행사는 베트남과 한국의 IT 기업 및 스타트업 간 협업을 촉진하고,
+              글로벌 IT 시장에서의 공동 성장을 지원합니다. 특히 한국 기업들이
+              베트남 IT 아웃소싱을 효과적으로 활용할 수 있도록 실무적인
+              인사이트를 제공합니다. 아울러, 소프트웨어 개발, 블록체인, AI,
+              탈중앙화 기술 등 최신 기술 트렌드를 공유하며, 지속 가능한 협력
+              방안을 모색하는 자리입니다.
             </p>
           </div>
           <div className="flex flex-col ~gap-3/6">

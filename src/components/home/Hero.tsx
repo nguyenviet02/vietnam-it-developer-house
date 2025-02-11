@@ -27,7 +27,7 @@ const Hero = () => {
       </div>
       <div className="mt-auto flex w-full items-center justify-center bg-[#FFFFFF33] p-4 backdrop-blur">
         <span className="~text-[0.75rem]/[1.5rem] ~leading-[1rem]/[1.75rem]">
-          주최사: 아이스티 소프트웨어 코리아 및 아이스티 소프트웨어
+          주최사: 아이스티 소프트웨어 코리아
         </span>
       </div>
     </div>
