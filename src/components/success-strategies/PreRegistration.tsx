@@ -25,7 +25,7 @@ const PreRegistration = () => {
               </h2>
             </div>
             <span className="text-[1.5rem] font-extrabold leading-[1.75rem]">
-              세션: 한국기업을 위한 IT아웃소싱 성공전략
+              Track 1 : 한국기업을 위한 IT아웃소싱 성공전략
             </span>
           </div>
           <a

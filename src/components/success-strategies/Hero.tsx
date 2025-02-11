@@ -3,7 +3,7 @@ import ITSLogo from "@images/ITS-logo.svg";
 
 const Hero = () => {
   return (
-    <div className="relative flex size-full flex-col justify-center items-center ~min-h-[14.0625rem]/[49.8125rem]">
+    <div className="relative flex size-full flex-col items-center justify-center ~min-h-[14.0625rem]/[49.8125rem]">
       <img src={HeroBg} className="absolute -z-[1] size-full" alt="" />
       <div className="flex size-full max-w-container flex-col items-center justify-center ~px-4/[5rem]">
         <div className="flex size-full flex-col items-center justify-center text-white ~gap-[0.5625rem]/[1.5rem] ~pt-[4.875rem]/[11.875rem]">
@@ -22,7 +22,7 @@ const Hero = () => {
               2025/03/18~19 | 서울, 한국
             </span>
             <h2 className="font-extrabold ~text-[1.45rem]/[3rem] ~leading-[1.75rem]/[3.5rem]">
-              세션 1: 한국기업을 위한 IT아웃소싱 성공전략
+              Track 1 : 한국기업을 위한 IT아웃소싱 성공전략
             </h2>
             <h3 className="max-w-[56.125rem] text-center text-[1.25rem] leading-[2.25rem]">
               한국 IT 기업과 베트남의 우수한 기술 인력을 연결하는 데 중점을
@@ -36,7 +36,7 @@ const Hero = () => {
       </div>
       <div className="mt-auto flex w-full items-center justify-center bg-[#FFFFFF33] p-4 backdrop-blur">
         <span className="~text-[0.75rem]/[1.5rem] ~leading-[1rem]/[1.75rem]">
-          주최사: 아이스티 소프트웨어 및 아이스티 소프트웨어 코리아
+          주최사: 아이스티 소프트웨어 코리아
         </span>
       </div>
     </div>

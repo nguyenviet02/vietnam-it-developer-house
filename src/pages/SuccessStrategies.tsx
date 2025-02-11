@@ -3,6 +3,7 @@ import EventHighlight from "@components/success-strategies/EventHighlight";
 import Hero from "@components/success-strategies/Hero";
 import Reference from "@components/common/Reference";
 import PreRegistration from "@components/success-strategies/PreRegistration";
+import Sponsor from "@components/success-strategies/Sponsor";
 
 const SuccessStrategies = () => {
   return (
@@ -12,6 +13,7 @@ const SuccessStrategies = () => {
       <EventHighlight />
       <PreRegistration />
       <Reference />
+			<Sponsor />
     </>
   );
 };
