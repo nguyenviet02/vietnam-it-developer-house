@@ -7,7 +7,7 @@ const EventHighlight = () => {
   const listTimeline = [
     {
       id: 1,
-      date: "2025/03/18",
+      date: "2025/03/25",
       background: BackgroundTimeline1,
       detail: [
         {
