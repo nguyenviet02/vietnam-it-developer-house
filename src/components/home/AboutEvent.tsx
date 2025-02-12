@@ -40,10 +40,10 @@ const AboutEvent = () => {
         className="absolute right-0 -z-[1] -translate-y-[30%] opacity-20"
         alt=""
       />
-      <h3 className="font-bold text-linear-gradient ~text-[2rem]/[4rem] ~leading-[2.5rem]/[4.75rem]">
+      <h3 className="text-linear-gradient font-bold ~text-[1.5rem]/[3rem] ~leading-[2rem]/[3.5rem]">
         About this event
       </h3>
-      <div className="mt-[3.875rem] flex w-full flex-col items-center gap-[4.7rem] lg:flex-row">
+      <div className="flex w-full flex-col items-center gap-[4.7rem] ~mt-[1rem]/[3rem] lg:flex-row">
         <img src={AboutEventImage} className="h-auto w-full lg:w-1/2" alt="" />
         <div className="flex flex-col gap-[3rem] px-4 lg:pr-[5rem]">
           <div className="flex flex-col ~gap-3/6">
