@@ -14,7 +14,7 @@ const PreRegistration = () => {
         <div className="relative flex size-full max-w-container flex-col items-center justify-center ~py-[1rem]/[5.75rem]">
           <div className="flex size-full flex-col items-center justify-center text-white ~gap-[0.5625rem]/[1.5rem]">
             <span className="font-bold ~text-[0.75rem]/[1.5rem] ~leading-4/[1.75rem]">
-              2025/03/18-19 | 서울, 한국
+              2025/03/18 | 서울, 한국
             </span>
             <div className="flex flex-col items-center font-Azonix">
               <h1 className="~text-[2rem]/[7.5rem] ~leading-[3rem]/[8.75rem]">
