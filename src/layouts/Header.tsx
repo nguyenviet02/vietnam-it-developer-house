@@ -8,7 +8,20 @@ import XMarkIcon from "@icons/XMarkIcon.svg";
 
 const navigation = [
   { name: "홈페이지", href: "/" },
-  { name: "이벤트 소개", href: "#about-event" },
+  {
+    name: "이벤트 소개",
+    href: "#about-event",
+    subMenu: [
+      {
+        name: "한국기업을 위한 IT아우소싱 성공전략",
+        href: "/success-strategies",
+      },
+      {
+        name: "웹3 오딧세이: 빌더, 트렌드, 그리고 미래",
+        href: "/web3-odyssey",
+      },
+    ],
+  },
   { name: "연락처", href: "#contact" },
   {
     name: "사전등록",
@@ -59,9 +72,23 @@ export default function Header() {
               <a
                 key={item.name}
                 href={item.href}
-                className={`px-[27px] py-6 text-[1rem] font-bold leading-[1.125rem] text-white ${item.isHighlight ? "bg-red" : ""}`}
+                className={`group relative px-[27px] py-6 text-[1rem] font-bold leading-[1.125rem] text-white ${item.isHighlight ? "bg-red" : ""}`}
               >
                 {item.name}
+                {item?.subMenu && (
+                  <div className="pointer-events-none absolute left-1/2 top-full z-10 flex w-fit min-w-[250px] -translate-x-1/2 transform flex-col items-center gap-6 rounded-xl bg-[#202335] p-6 opacity-0 shadow-lg backdrop-blur transition-opacity duration-300 group-hover:pointer-events-auto group-hover:opacity-100">
+                    {item.subMenu.map((subItem) => (
+                      <a
+                        key={subItem.name}
+                        href={subItem.href}
+                        className="block text-xs font-bold leading-[14px] text-white hover:text-red"
+                      >
+                        {subItem.name}
+                      </a>
+                    ))}
+                    <div className="absolute -top-1 left-1/2 -z-[1] h-[52px] w-[52px] -translate-x-1/2 rotate-45 transform bg-[#202335]"></div>
+                  </div>
+                )}
               </a>
             ))}
           </div>
