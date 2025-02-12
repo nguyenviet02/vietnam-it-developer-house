@@ -24,7 +24,7 @@ const EventHighlight = () => {
         },
         {
           time: "10:00 ~ 10:15",
-          title: "QA",
+          title: "Q&A",
         },
         {
           time: "10:15 ~ 10:30",
