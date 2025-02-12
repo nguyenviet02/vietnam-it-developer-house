@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <div className="relative flex size-full flex-col items-center justify-center ~min-h-[14.0625rem]/[49.8125rem]">
       <img src={HeroBg} className="absolute -z-[1] size-full" alt="" />
-      <div className="flex size-full max-w-container flex-col items-center justify-center ~px-4/[5rem]">
+      <div className="flex size-full max-w-container flex-col items-center justify-center pb-4 ~px-4/[5rem] md:pb-0">
         <div className="flex size-full flex-col items-center justify-center text-white ~gap-[0.5625rem]/[1.5rem] ~pt-[4.875rem]/[11.875rem]">
           <div className="flex w-full items-center justify-center ~gap-4/8 ~py-4/8">
             <span className="font-bold uppercase text-white ~text-[0.75rem]/[1.25rem] ~leading-[1.125rem]/[2.25rem]">
@@ -21,10 +21,10 @@ const Hero = () => {
             <span className="font-extrabold ~text-[0.75rem]/[1.5rem] ~leading-4/[1.75rem]">
               2025/03/20 | 서울, 한국
             </span>
-            <h2 className="font-extrabold ~text-[1.45rem]/[3rem] ~leading-[1.75rem]/[3.5rem]">
+            <h2 className="text-center font-extrabold ~text-[1.45rem]/[3rem] ~leading-[1.75rem]/[3.5rem]">
               Track 2 : 웹3 오딧세이 - 빌더, 트렌드, 그리고 미래
             </h2>
-            <h3 className="max-w-[56.125rem] text-center text-[1.25rem] leading-[2.25rem]">
+            <h3 className="max-w-[56.125rem] text-center ~text-[0.75rem]/[1.25rem] ~leading-[1.25rem]/[2.25rem]">
               이 행사는 베트남과 블록체인 전문 한국 기업 간의 기술 협력을
               촉진하고, 블록체인을 기존 앱에 통합하려는 기업들이 해외 IT 인재를
               찾고 팀을 구축하는 데 도움을 주는 것을 목표로 합니다. 또한, 이는
