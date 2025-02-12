@@ -33,7 +33,7 @@ const EventHighlight = () => {
         {
           time: "10:30 ~ 10:45",
           title: "해외 아웃소싱을 할때 준비해야 할 점",
-					isSpotlight: true,
+          isSpotlight: true,
         },
         {
           time: "10:45 ~ 11:00",
@@ -82,7 +82,7 @@ const EventHighlight = () => {
         {
           time: "10:15 ~ 10:30",
           title: "성공 사례: 베트남 아웃소싱 회사와 협력 사례 발표",
-					isSpotlight: true,
+          isSpotlight: true,
         },
         {
           time: "10:30 ~ 11:00",
@@ -98,7 +98,7 @@ const EventHighlight = () => {
         },
         {
           time: "13:00 ~ 13:10",
-          title: "Web2에서 web3로의 전환 상담",
+          title: "기존 앱에서 블록체인 기술 통합",
         },
         {
           time: "13:10 ~ 15:00",

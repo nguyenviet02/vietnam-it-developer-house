@@ -1,5 +1,5 @@
 import HeroBg from "@images/hero-bg.png";
-import ITSLogo from "@images/ITS-logo.svg";
+import ITSLogo from "@images/ITSKorea-logo.svg";
 
 const Hero = () => {
   return (

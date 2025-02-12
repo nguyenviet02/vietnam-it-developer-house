@@ -41,9 +41,9 @@ const ListTimeline = ({ timelines }: Props) => {
                   return (
                     <div
                       key={detailTimeline.time}
-                      className={`mt-auto flex h-10 min-h-fit w-full items-center px-3 ~gap-4/8 ${detailTimeline.isHighlight ? "bg-[#FFF] py-2 text-[#A50101]" : ""}`}
+                      className={`mt-auto flex h-10 min-h-fit w-full items-center px-3 ~gap-1/2 ${detailTimeline.isHighlight ? "bg-[#FFF] py-2 text-[#A50101]" : ""}`}
                     >
-                      <p className="w-[35%] shrink-0 font-Azonix ~text-[0.875rem]/[1.25rem] ~leading-[1rem]/[1.5rem]">
+                      <p className="w-[35%] min-w-fit shrink-0 font-Azonix ~text-[0.875rem]/[1.25rem] ~leading-[1rem]/[1.5rem]">
                         {detailTimeline.time}
                       </p>
                       <p className="w-fit ~text-[0.875rem]/[1.25rem] ~leading-[1rem]/[1.5rem]">
