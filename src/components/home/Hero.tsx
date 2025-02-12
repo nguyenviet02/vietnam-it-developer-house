@@ -8,7 +8,7 @@ const Hero = () => {
       <div className="flex size-full max-w-container flex-col items-center justify-center ~px-[1.5rem]/[17.8rem]">
         <div className="flex size-full flex-col items-center justify-center text-white ~gap-[0.5625rem]/[1.5rem] ~pt-[4.875rem]/[11.875rem]">
           <span className="font-bold ~text-[0.75rem]/[1.5rem] ~leading-4/[1.75rem]">
-            2025/03/18~20 | 서울, 한국
+            2026/03/18~20 | 서울, 한국
           </span>
           <div className="flex flex-col items-center font-Azonix">
             <h1 className="~text-[3rem]/[7.5rem] ~leading-[3.4375rem]/[8.75rem]">
