@@ -91,7 +91,7 @@ const BenefitsCommon = ({ benefits }: Props) => {
           </div>
           <div className="flex items-center gap-2 py-[1.875rem]">
             <span className="font-medium ~text-[0.875rem]/[1.25rem] ~leading-[1rem]/[1.5rem]">
-              IT아웃소싱 서비스 이용 시 최대
+              IT 아웃소싱 서비스 이용 시 최대
             </span>
             <span className="font-extrabold ~text-[0.75rem]/[2.25rem] ~leading-[1rem]/[3.375rem]">
               20% 할인 바우처
