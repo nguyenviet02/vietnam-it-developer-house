@@ -22,7 +22,7 @@ const Hero = () => {
               2025/03/18~19 | 서울특별시 강남구 역삼로 168, 1층
             </span>
             <h2 className="text-center font-extrabold ~text-[1.45rem]/[3rem] ~leading-[1.75rem]/[3.5rem]">
-              Track 1 : 한국기업을 위한 IT아웃소싱 성공전략
+              Track 1 : 한국기업을 위한 IT 아웃소싱 성공전략
             </h2>
             <h3 className="max-w-[56.125rem] text-center ~text-[0.75rem]/[1.25rem] ~leading-[1.25rem]/[2.25rem]">
               한국 IT 기업과 베트남의 우수한 기술 인력을 연결하는 데 중점을
