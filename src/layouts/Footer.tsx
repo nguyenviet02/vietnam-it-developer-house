@@ -106,7 +106,7 @@ const Footer = () => {
               href="#"
             >
               <img src={LocationIcon} alt="" />
-              Seoul, Korea
+              회성빌딩, 서울 강남구 역삼로 168, 1층
             </a>
           </div>
         </div>
