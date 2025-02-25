@@ -19,7 +19,7 @@ const Hero = () => {
           </div>
           <div className="flex flex-col items-center gap-4">
             <span className="font-extrabold ~text-[0.75rem]/[1.5rem] ~leading-4/[1.75rem]">
-              2025/03/18~19 | 서울특별시 강남구 역삼로 168, 1층
+              2025/03/18~19 | 회성빌딩, 서울 강남구 역삼로 168, 1층
             </span>
             <h2 className="text-center font-extrabold ~text-[1.45rem]/[3rem] ~leading-[1.75rem]/[3.5rem]">
               Track 1 : 한국기업을 위한 IT 아웃소싱 성공전략
