@@ -19,7 +19,7 @@ const Hero = () => {
           </div>
           <div className="flex flex-col items-center gap-4">
             <span className="font-extrabold ~text-[0.75rem]/[1.5rem] ~leading-4/[1.75rem]">
-              2025/03/20 | 회성빌딩, 서울 강남구 역삼로 168, 1층
+              2025/03/20 | 서울시 강남구 역삼로 168 회성빌딩 1층
             </span>
             <h2 className="text-center font-extrabold ~text-[1.45rem]/[3rem] ~leading-[1.75rem]/[3.5rem]">
               Track 2 : 웹3 오딧세이 - 빌더, 트렌드, 그리고 미래
