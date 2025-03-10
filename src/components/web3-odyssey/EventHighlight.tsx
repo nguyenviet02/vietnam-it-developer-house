@@ -23,7 +23,7 @@ const EventHighlight = () => {
         },
         {
           time: "10:00 ~ 10:15",
-          title: "아이스티 소프트웨어 대표이사: 웹3에서의 AI는 무엇인가?",
+          title: "웹3에서의 AI는 무엇인가?",
           isSpotlight: true,
         },
         {
@@ -45,7 +45,7 @@ const EventHighlight = () => {
         },
         {
           time: "13:30 ~ 13:45",
-          title: "아이스티 소프트웨어 대표이사: 웹3에서의 AI는 무엇인가?",
+          title: "웹3에서의 AI는 무엇인가?",
           isSpotlight: true,
         },
         {
