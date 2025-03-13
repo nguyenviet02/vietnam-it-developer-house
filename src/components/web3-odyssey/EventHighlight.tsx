@@ -27,12 +27,12 @@ const EventHighlight = () => {
           isSpotlight: true,
         },
         {
-          time: "10:15 ~ 11:30",
+          time: "10:15 ~ 10:30",
           title: "Web3 개발을 위한 전담팀 &  해외 파트너와의 협력 사례",
           isSpotlight: true,
         },
         {
-          time: "11:30 ~ 12:00",
+          time: "10:30 ~ 10:45",
           title: "Q&A",
         },
         {
